@@ -1,0 +1,626 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    height:100%;
+}
+
+.App {
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+/* Mobile */
+/* Home Page */
+
+/* Main Content */
+.unlock {
+    color:rgba(29, 26, 26, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:400;
+    font-size:78px;
+    line-height:64px;
+}
+
+.unlock-lg {
+    font-size:88px;
+}
+
+.intro-paragraph {
+    color:rgba(90, 88, 88, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.divider {
+    width:343px;
+}
+
+.offer, .roles, .faq, .latest-header, .about-captions,
+.project-managers-header, .frontend-developers-header, 
+.backend-developers-header, .mobile-developers-header,
+.devops-engineer-header, .content-creator-header,
+.graphics-designer-header, 
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size:14px;
+    color:rgba(29, 26, 26, 1);
+    letter-spacing:2px;
+}
+
+.offer-content, .roles-content, .about-content, .project-content{
+    color:rgba(90, 88, 88, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:18px;
+    width:382px;
+}
+
+.numberone,.numbertwo, .numberthree, .numberfour, .numberfive, .numbersix, .rolesNumbers, 
+.faq-text, .values, .steps-header, .header-content, .getintouch-header
+{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:400;
+    font-size:24px;
+    color:rgba(0, 0, 0, 1);
+}
+
+.padding-top {
+    padding-top:6px;
+}
+
+.numberone-text, .numbertwo-text, .numberthree-text, .numberfour-text, .numberfive-text, 
+.numbersix-text, .steps-text, .values-text, .pm-text, .getintouch-content, .mail-content,
+.values-project-text
+{
+    color:rgba(90, 88, 88, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:16px;
+}
+
+.numbertwo-text {
+    width:370px;
+}
+
+.SixIcon {
+    width:56px;
+    height:50px;
+}
+
+.MiscIcon {
+    width:48px;
+    height:50px;
+}
+
+.steps {
+    color:rgba(153, 152, 152, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:400;
+    font-size:16px;
+}
+
+.steps-header {
+    padding-top:12px;
+}
+
+.readyheader, .whyvolunteer, .your-role, .readytojoin {
+    color:rgba(29, 26, 26, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:400;
+    font-size:56px;
+}
+
+.readytext {
+    color:rgba(90, 88, 88, 1);
+}
+
+.ready-text, .latest {
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:18px;
+}
+
+.latest {
+    color:rgba(90, 88, 88, 0.85);
+    width:392px;
+}
+
+.join, .volunteer, .submitmessage {
+    color:rgba(255, 255, 255, 1);
+    background-color:rgba(29, 26, 26, 1);
+    text-align:center;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size:16px;
+    border-radius:30px;
+    width:125px;
+    height:56px;
+    padding:16px 24px 16px 24px;
+}
+
+.faq-p {
+    background-color:rgba(250, 250, 250, 1);
+    /* width:382px; */
+    height:80px;
+    border-radius:12px;
+    padding:16px;
+}
+
+.faq-p-big {
+    background-color:rgba(250, 250, 250, 1);
+    border-radius:12px;
+    padding:16px;
+    height:112px;
+}
+
+/* 80 to 96 */
+.paid-header {
+    gap:89px;
+}
+
+.mr-1.2 {
+    margin-right:7px;
+}
+
+.Iconclosed {
+    width:32px;
+    height:32px;
+}
+
+.blog-view {
+    background-color:rgba(153, 152, 152, 1);
+    padding:8px 16px 8px 16px;
+    width:120px;
+    height:36px;
+    border-radius:30px;
+    border:none;
+    color:rgba(255, 255, 255, 1);
+    text-align:center;
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size:14px;
+}
+
+.caption-header {
+    color:rgba(10, 9, 9, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:500;
+    font-size:16px;
+}
+
+.carousel-style {
+    background-color:rgba(250, 250, 250, 1);
+    border-radius:20px;
+    height:274px;
+}
+
+.images {
+    border-radius:20px;
+}
+
+/* Modal Component */
+
+.added-content, .flip {
+    padding: 10px;
+    text-align: left;
+}
+
+.added-content  {
+    display: none;
+}
+
+/*Header */
+#projectx {
+    height:24px;
+}
+
+.hamburger {
+    width:32px;
+    height:32px;
+}
+
+.content {
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:18px;
+    padding: 10px; /* Padding for the content area */
+    border-top: 1px solid #ccc; /* Border between question and answer */
+    color: rgba(29, 26, 26, 1);
+    max-height: 150px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: none; /* Initially hide content */
+}
+
+.faq-p .content {
+    display: block; /* Show content when parent has 'open' class */
+}
+
+/* Footer */
+.footer {
+    background-color:rgba(29, 26, 26, 1);
+    position: relative;
+    width:100%;
+}
+
+.link-contain {
+    color:rgba(250, 250, 250, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size:14px;
+}
+
+.footer-links {
+    text-decoration:none;
+}
+
+.logo-side {
+    color:rgba(255, 255, 255, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:500;
+    font-size:19.77px;
+}
+
+.bottom-links {
+    color:rgba(221, 221, 221, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:12px;
+    line-height:1;
+}
+
+.lines {
+    color:rgba(108, 106, 106, 1);
+}
+
+/* About Page */
+.about-title, .apply-title {
+    color:rgba(29, 26, 26, 1);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight:500;
+}
+
+.about-title {
+    font-size:56px;
+}
+
+.mentorship {
+    width:;
+}
+
+.about-captions {
+    width:280px;
+}
+
+/* Project Page  */
+.header-content {
+    width:382px;
+    color:rgb(0,0,0,0.6);
+}
+
+.header-span {
+    color:rgb(0,0,0);
+}
+
+.coming-soon {
+    font-family: "Inter", sans-serif;
+    font-weight:500;
+    font-size:12px;
+    text-align:center;
+    color:rgba(134, 85, 3, 1);
+    border-radius:12px;
+    border:1px solid rgba(134, 85, 3, 1);
+    padding-right:8px;
+    padding-left:8px;
+    padding-bottom:6px;
+    height:17px;
+}
+
+.your-role {
+    width:382px ;
+    line-height:1.15;
+}
+
+.roles-lists {
+    border:1px solid rgba(221, 221, 221, 1);
+    border-radius:16px;
+    padding:8px 12px 12px 12px; 
+}
+
+.roles-container {
+    width:382px;
+}
+
+.readytojoin {
+    width:221px;
+}
+
+/*Contact Page*/
+.Name, .Email, .Message {
+    width:382px;
+    height:54px;
+    border-radius:6px;
+    border:2px solid rgba(237, 237, 237, 1);
+    padding:4px 16px 4px 16px;
+}
+
+.message  {
+    height:320px;
+    position: relative;
+}
+
+.two-fifty {
+    color:rgba(0, 0, 0, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:600;
+    font-size:12px;
+}
+
+.submitmessage {
+    width:174px;
+}
+
+.getintouch-header {
+    color:rgba(29, 26, 26, 1);
+}
+
+.contact-content {
+    color:rgba(29, 26, 26, 1);
+}
+
+.contact-links {
+    width:12px;
+}
+
+/*Application*/
+.apply-title {
+    font-size:72px;
+    line-height:1;
+    width:382px;
+}
+
+.apply-title, .apply-content {
+    width:382px;
+}
+
+.apply-content {
+    color:rgba(90, 88, 88, 1);
+    font-family: "Open Sans", sans-serif;
+    font-weight:400;
+    font-size:20px;
+    width:390px;
+}
+
+/* Tablet */
+/* Home Page  */
+
+@media screen and (min-width: 1024px) {
+    .intro-paragraph {
+        line-height:1.3;
+    }
+
+    .rightarrow {
+        width:48px;
+        height:48px;
+    }
+
+    .divider {
+        width:992px;
+    }
+
+    .offer-content {
+        width:525px;
+    }
+
+    .numberone-text, .numbertwo-text, .numberthree-text, .numberfour-text, .numberfive-text, 
+    .numbersix-text 
+    {
+        width:512px;
+    }
+
+    .roles-content {
+        width:508px;
+    }
+
+    .steps-text {
+        width:320px;
+    }
+
+    .ready-text {
+        width:685px;
+        padding-top:0px;
+    }
+
+    .faq-p, .faq-p-big {
+        width:512px;
+    }
+
+    .latest {
+        width:508px;
+    }
+
+    .blog-view-tablet {
+        position:absolute;
+        right:0;
+        margin-top:100px;
+        margin-right:10px;
+    }
+
+    .logo-footer {
+        width:738.12px;
+        height:75.52px;
+    }
+
+    .logo-side {
+       font-size:51.35px;
+    }
+
+    .bottom-links {
+        font-size:14px;
+    }
+
+    /* About */
+    .about-captions {
+        width:115px;
+    }
+
+    .about-content {
+        width:635px;
+    }
+
+    .padding-top {
+        padding-top:0px;
+    }
+
+    .values-text {
+        width:484px;
+    }
+
+    .journey {
+        width:256px;
+    }
+
+    .journey-content {
+        width:508px;
+    }
+
+    .mentor {
+        width:290px;
+    }
+
+    .mentor-content, .grid {
+        width:484px;
+    }
+
+    .mentor-icons {
+        width:48px;
+        height:50px;
+    }
+
+    .steps-about {
+        width:483px;
+    }
+
+    .steps {
+        width:49px;
+    }
+
+    .steps-text, .steps-adjust {
+        width:484px;
+    }
+
+    .whyvolunteer {
+        width:336px;
+    }
+
+    /* Project */
+    .header-content {
+        width:651px;
+        height:92px;
+    }
+
+    .text-right {
+        text-align :right;
+    }
+
+    .project-content {
+        width:486px;
+        height:144px;
+    }
+
+    .project-captions{
+        width:357px;
+        height:20px;
+    }
+
+    .values-project-text {
+        width:508px;
+    }
+
+    .your-role {
+        width:669px;
+    }
+
+    .project-content {
+        width:509px;
+        margin-left:auto;
+    }
+
+    .pm-text{
+        width:483px;
+    }
+
+    .project-managers-header{
+        width:180px;
+    }
+
+    .values-pm {
+        width:483px;
+    }
+
+    .frontend-developers-header {
+        width:193px;
+    }
+
+    .backend-developers-header {
+        width:170px;
+    }
+
+    .mobile-developers-header {
+        width:170px;
+    }
+
+    .devops-engineer-header {
+        width:170px;
+    }
+
+    .content-creator-header {
+        width:170px;
+    }
+
+    .graphics-designer-header {
+        width:240px;
+    }
+
+    .social-links-size {
+        width:48px;
+        height:48px;
+    }
+
+    .social-links-header {
+        gap:3rem;
+    }
+
+    .main-data {
+        width:242px;
+    }
+
+    .message {
+        width:508px;
+    }
+
+    .submitmessage {
+        
+    }
+
+    .width {
+        width:327px;
+    }
+
+    .header-content {
+        margin-left:auto;
+        width:611px;
+    }
+}
